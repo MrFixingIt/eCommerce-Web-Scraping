@@ -1,0 +1,38 @@
+- - - Target Website For Scraping - - -
+https://webscraper.io/test-sites/e-commerce/static/computers/laptops
+
+- - - Main Stories - - -
+-Remember to utilize your browser’s Developer Tools to explore the structure of the HTML page and figure out how to select the card elements!
+
+-(10 points): As a data analyst, I want to clean and format my data so that all of my data is free of any duplicates, null values, and other anomalies, then write the data to a CSV file and include a UNIQUE ID number for each row.
+
+-The ID will be an integer and needs to be different for each row, starting at the number 1 for the first row.
+NOTE: You will NOT need to use Pandas for any cleaning/wrangling of the data. As you locate and inspect elements, you’ll need to write Python code and determine what data to keep and how it should be formatted before writing to CSV.
+
+-(10 points): As a data analyst, I want to import my CSV file into a new Tableau workbook as a data source and create (1) visualization of my choosing to represent a comparison of the number of reviews a laptop has to its price.
+
+-(5 points): As a data analyst, I want to include a README file in my Python project answering the following questions:
+
+-What was the biggest challenge of scraping the web site?
+-What insight, if any, did you gain from the analysis and visualization of the laptop data?
+-(5 points): As a data analyst, I want to save my Tableau workbook as a Tableau Public project so that I may share the results of my analysis easily.
+
+Bonus Stories
+(5 points): As a data analyst, I want to sort all of the data by price BEFORE exporting it to a CSV using Python code.
+
+- - - Checklist - - -
+Run through the Setup Setups and get your project ready to begin work.
+Review the Resources outlined below - be sure to have relevant documentation and references open while you develop!
+Scrape laptop product data from the target website. Use Selenium to navigate to the laptops section of the site and get the product name, specifications, price, and number of reviews for each laptop.
+Clean and wrangle the data, making sure any null values, duplicates, and other oddities are handled before outputting as a CSV file.
+Import the CSV into Tableau for your visualization work. Publish the completed workbook to Tableau Public.
+Submit your project as a GitHub repository with the downloaded Tableau Workbook, the README, the completed CSV file.
+
+- - - Setup Steps - - -
+Create a new Python project by creating a folder with a single script file: script.py
+Download and install Google Chrome Browser if you do not have it installed.
+Download the Chrome Web Driver and place it in the folder where your script file is located. 
+Start with the imports needed for Selenium (make sure to install Selenium using pip install selenium if you haven’t done so already).
+Set up your CSV file to be written to.
+Set up your Selenium service using the ChromeDriver.
+Begin by getting the target website and exploring it using your Developer Tools to find how you’ll navigate to the listing of laptops you are scraping.
